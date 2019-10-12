@@ -1,0 +1,16 @@
+{
+  "name": "jsonpractice",
+  "version": "1.0.0",
+  "description": "json practice",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server ",
+    "dev": "nodemon server"
+  },
+  "author": "Anwesh Korram",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.3"
+  }
+}

@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-align: center;
+}
+.main {
+  width: 100vw;
+  height: 300px;
+  background: black;
+}
+.prev {
+  width: 5%;
+  height: 300px;
+  float: left;
+  /* opacity: 0.2; */
+}
+a {
+  font-size: 100px;
+  color: white;
+  position: relative;
+  top: 25%;
+  cursor: pointer;
+}
+/* .scene {
+  width: 90%;
+  height: 300px;
+  float: left;
+} */
+
+.scene {
+  border: 1px solid transparent;
+  margin: 40px 0;
+  position: relative;
+  width: 89.85731%;
+  float: left;
+  height: 260px;
+  margin: 20px auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateZ(-831px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carousel__cell {
+  position: absolute;
+  width: 98%;
+  height: 238px;
+  left: 10px;
+  top: 10px;
+  border: 2px solid black;
+  line-height: 116px;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  transition: transform 1s, opacity 1s;
+}
+.carousel__cell img {
+  width: 33%;
+  height: 238px;
+  float: left;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.carousel__cell:nth-child(1) {
+  transform: rotateY(0deg) translateZ(831px);
+}
+.carousel__cell:nth-child(2) {
+  transform: rotateY(72deg) translateZ(831px);
+}
+.carousel__cell:nth-child(3) {
+  transform: rotateY(144deg) translateZ(831px);
+}
+.carousel__cell:nth-child(4) {
+  transform: rotateY(216deg) translateZ(831px);
+}
+.carousel__cell:nth-child(5) {
+  transform: rotateY(288deg) translateZ(831px);
+}
+
+.next {
+  width: 5%;
+  height: 300px;
+  float: left;
+  /* opacity: 0.2; */
+  /* float: right;
+    top: -100%; */
+  position: relative;
+}
